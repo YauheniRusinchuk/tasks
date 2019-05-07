@@ -1,5 +1,6 @@
+{% load static %}
 <div class="anon_container">
-
+    <img src="{% static 'assets/list.png' %}" />
     <h3>Hi. Start adding tasks for each day.</h3>
-    <a class='btn_login' href=''>Login page</a>
+    <a class='btn_login' href="{% url 'home:login_page' %}">Login page</a>
 </div>
