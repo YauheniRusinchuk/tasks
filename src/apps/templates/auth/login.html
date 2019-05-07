@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container_login">
+        <img src="{% static 'assets/smile.png' %}" />
+        <form>
+            <input type="email" name="" placeholder="Email ..." value="">
+            <input type="password" name="" placeholder="Password ..." value="">
+            <button type="submit" name="button">Login</button>
+        </form>
+    </div>
+
+{% endblock %}
