@@ -5,9 +5,9 @@
 {% block content %}
     <div class="container_login">
         <img src="{% static 'assets/smile.png' %}" />
-        <form>
-            <input type="email" name="" placeholder="Email ..." value="">
-            <input type="password" name="" placeholder="Password ..." value="">
+        <form method="POST">{% csrf_token %}
+            <input type="email" name="email" placeholder="Email ..." value="">
+            <input type="password" name="password" placeholder="Password ..." value="">
             <button type="submit" name="button">Login</button>
         </form>
     </div>
