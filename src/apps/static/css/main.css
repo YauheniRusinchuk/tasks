@@ -39,7 +39,7 @@ body {
 .btn_login {
     padding: 3px 30px;
     border-radius: 20px;
-    background-color: green;
+    background-color: #32a698;
     color: white;
     font-size: 10px;
     text-decoration: none;
@@ -70,14 +70,14 @@ body {
 }
 
 .container_login form button {
-    background-color: green;
+    background-color: #32a698;
     padding: 3px 30px;
     border-radius: 20px;
     font-size: 10px;
     font-weight: bold;
     color: white;
     outline: none;
-    border: 1px solid green;
+    border: 1px solid #32a698;
     cursor: pointer;
     box-shadow: 0 0 10px grey;
 }
