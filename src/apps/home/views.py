@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib.auth import authenticate, login, logout
+from src.models.boards.models import Board
+
 
 
 class LoginView(View):
@@ -26,4 +28,5 @@ def log_out(request):
 
 
 def index(request):
-    return render(request, 'home/index.html', {})
+    boards = Board.objects.filter(user=request.user)
+    return render(request, 'home/index.html', {'boards': boards})

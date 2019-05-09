@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'src.models.accounts',
+    'src.models.boards'
 ]
 
 AUTH_USER_MODEL = 'accounts.User'

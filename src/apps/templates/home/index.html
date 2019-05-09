@@ -4,6 +4,9 @@
 {% block content %}
 
     {% if user.is_authenticated %}
+
+        {% include 'listboards.html' %}
+
     {% else %}
         {% include 'anon.html' %}
     {% endif %}
