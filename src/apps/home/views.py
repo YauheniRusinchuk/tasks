@@ -28,5 +28,7 @@ def log_out(request):
 
 
 def index(request):
+    if not request.user.is_authenticated:
+        return render(request, 'home/index.html', {})
     boards = Board.objects.filter(user=request.user)
     return render(request, 'home/index.html', {'boards': boards})
