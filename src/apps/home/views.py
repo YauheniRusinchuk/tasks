@@ -5,6 +5,14 @@ from src.models.boards.models import Board
 
 
 
+class NewTaskView(View):
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'home/new.html', {})
+
+
+
+
 class LoginView(View):
 
     def get(self, request, *args, **kwargs):
