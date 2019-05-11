@@ -91,7 +91,6 @@ body {
 }
 
 .board_item {
-    border: 1px solid #e6e6e6;
     background-color: white;
     display: inline-block;
     width: 100%;
@@ -102,7 +101,6 @@ body {
     padding: 10px;
     border-radius: 3px;
     color: #292828;
-    box-shadow: 0 0 5px #e6e6e6;
 }
 
 .board_item p {
@@ -150,4 +148,24 @@ body {
     color: #32a698;
     font-weight: bold;
     cursor: pointer;
+}
+
+
+.btn_delete {
+    margin-left: 20px;
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 1px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.btn_delete:hover {
+    background-color: red;
+    color: white;
 }
