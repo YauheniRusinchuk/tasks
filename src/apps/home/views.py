@@ -1,8 +1,19 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
+from django.views.generic.edit import DeleteView
 from django.contrib.auth import authenticate, login, logout
 from src.models.boards.models import Board
 from django.contrib.auth.mixins import LoginRequiredMixin
+
+
+class DeleteTaskView(View):
+
+    def get(self, request, *args, **kwargs):
+        task = Board.objects.get(pk=kwargs['pk'])
+        if request.user == task.user:
+            task.delete()
+        return redirect('home:home_page')
+
 
 
 class NewTaskView(LoginRequiredMixin,View):

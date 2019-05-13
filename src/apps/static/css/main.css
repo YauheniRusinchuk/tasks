@@ -148,6 +148,7 @@ body {
     color: #32a698;
     font-weight: bold;
     cursor: pointer;
+    outline: none;
 }
 
 

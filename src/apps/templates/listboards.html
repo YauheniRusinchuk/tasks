@@ -2,7 +2,7 @@
 <div class="boards_container">
     {% for board in boards %}
         <div class="board_item">
-            <p>{{board.name}}<a class='btn_delete' href="">delete</a></p>
+            <p>{{board.name}}<a class='btn_delete' href="{% url 'home:delete_task' pk=board.pk %}">delete</a></p>
 
         </div>
     {% endfor %}
